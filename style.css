@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    font-size: 1.6rem;
+}
+
+.container {
+    width: 375px;
+    margin: 1.5rem auto;
+    border: .1rem solid black;
+}
+
+.box1 {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+}
+
+.box2 {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    background-color: hsl(179, 62%, 43%);
+}
+
+.box3 {
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    background-color: hsl(179, 47%, 52%);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
