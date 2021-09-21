@@ -25,10 +25,11 @@ body {
 }
 
 .container {
-    width: 375px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    min-width: 375px;
     height: 100vh;
     margin: 1.5rem auto;
-    border: .1rem solid black;
 }
 
 .container .box1 {
@@ -83,11 +84,12 @@ body {
     font-weight: 400;
 }
 .box2 button {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 300px;
     height: 6rem;
     margin: 4rem auto;
-    text-align: center;
     font-size: 2rem;
     font-weight: 700;
     background-color: var(--bright-yellow);
@@ -101,7 +103,11 @@ body {
     width: 375px;
     height: 320px;
     margin: 0 auto;
+    padding: 3rem;
     background-color: hsl(179, 47%, 52%);
+    font-weight: 700;
+    line-height: 1.5;
+    color: #fff;
 }
 
 
