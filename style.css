@@ -19,30 +19,86 @@ html {
 body {
     font-family: 'Karla', sans-serif;
     font-size: 1.6rem;
+  /*   font-weight: 400; */
+    background-color: var(--light-gray);
     color: var(--light-gray);
 }
 
 .container {
     width: 375px;
+    height: 100vh;
     margin: 1.5rem auto;
     border: .1rem solid black;
 }
 
-.box1 {
-    width: 320px;
+.container .box1 {
+    width: 375px;
     height: 320px;
     margin: 0 auto;
+    padding: 3rem 3rem;
+    background-color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+    color: var(--grayish-blue);
 }
+.box1 h2 {
+    padding-bottom: 1.5rem;
+    color: var(--primary-blue);
+}
+.box1 h3 {
+    padding: 1.2rem 0;
+    color: var(--bright-yellow);
+}
+.box1 p {
+    padding-top: 1.5rem;
+    font-weight: 400;
+    line-height: 1.8;
+}
+
 
 .box2 {
-    width: 320px;
-    height: 320px;
+    width: 375px;
+    height: 310px;
     margin: 0 auto;
+    padding: 3rem 3rem;
     background-color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    line-height: 1.5;
+    color: #fff;
+}
+.box2 h2 {
+    margin-bottom: 1rem;
+}
+#price {
+    font-size: 5rem;
+}
+#price span {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--light-gray);
+}
+.box2 p {
+    
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+.box2 button {
+    display: inline-block;
+    width: 300px;
+    height: 6rem;
+    margin: 4rem auto;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    background-color: var(--bright-yellow);
+    border: none;
+    border-radius: .5rem;
+    color: #fff;
 }
 
+
 .box3 {
-    width: 320px;
+    width: 375px;
     height: 320px;
     margin: 0 auto;
     background-color: hsl(179, 47%, 52%);
