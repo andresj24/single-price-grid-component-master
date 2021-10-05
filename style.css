@@ -120,6 +120,7 @@ body {
     border: none;
     border-radius: .5rem;
     color: #fff;
+    cursor: pointer;
 }
 
 .box3 {
@@ -154,12 +155,14 @@ body {
 } 
 
 @media screen and (min-width: 800px) {
+    
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
         grid-template-areas:
         'box1 box1'
         'box2 box3';
+        min-width: 700px;
         width: 50%;
     }
     .box1 {
@@ -168,12 +171,12 @@ body {
     }
     .box2 {
         grid-area: box2;
-        padding: 2.5rem 2.5rem 0rem 4rem;
+        padding: 2.5rem 5rem 1.5rem 4rem;
         border-radius: 0 0 0 1rem;
     }
     .box3 {
         grid-area: box3;
-        padding: 2.5rem 2.5rem 0rem 4rem;
+        padding: 2.5rem 2.5rem 1.5rem 4rem;
         border-radius: 0 0 1rem 0;
     }
     .box3 h2 {
