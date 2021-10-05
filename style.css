@@ -12,7 +12,8 @@ html {
     
     font-size: 62.5%; /*1rem = 10px*/   
 }
-  *{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -28,12 +29,12 @@ body {
 
 .container {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 1rem auto;
-    width: 100%;
-    height: 95vh;
+    max-width: 100vw;
+    min-height: 95vh;
 } 
 
 .grid-container {
@@ -44,12 +45,11 @@ body {
         'box2'
         'box3'
         ;
+    width: 360px;
 }
 
 .box1 {
     grid-area: box1;
-    width: 360px; 
-    margin: 0 auto;
     padding: 2.5rem;
     background-color: #fff;
     border-radius: 1rem 1rem 0 0;
@@ -57,57 +57,62 @@ body {
     line-height: 1.5;
     color: var(--grayish-blue);
 }
+
 .box1 h2 {
     padding-bottom: 1rem;
     color: var(--primary-blue);
 }
+
 .box1 h3 {
     padding: 1rem 0;
     color: var(--bright-yellow);
 }
+
 .box1 p {
     padding-top: 1rem;
     font-weight: 400;
     line-height: 1.8;
 }
 
-
 .box2 {
     grid-area: box2;
-    width: 360px; 
-    margin: 0 auto;
     padding: 2.5rem;
     background-color: hsl(179, 62%, 43%);
     font-weight: 700;
     line-height: 1.5;
     color: #fff;
 }
+
 .box2 h2 {
     margin-bottom: 1rem;
 }
+
 #price {
     margin-bottom: 1rem;
     font-size: 4rem;
     font-weight: 700;
     
 }
+
 #price span {
     font-size: 1.6rem;
     font-weight: 400;
     vertical-align: middle;
     color: var(--light-gray);
 }
+
 .box2 p {
     font-size: 1.8rem;
     font-weight: 400;
 }
+
 .box2 button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 310px;
+    width: 100%;
     height: 6rem;
-    margin: 3rem 0px;
+    margin: 3rem auto 2rem;
     font-size: 2rem;
     font-weight: 700;
     background-color: var(--bright-yellow);
@@ -117,11 +122,8 @@ body {
     color: #fff;
 }
 
-
 .box3 {
     grid-area: box3;
-    width: 360px; 
-    margin: 0 auto;
     padding: 2.5rem;
     background-color: hsl(179, 47%, 52%);
     border-radius: 0rem 0rem 1rem 1rem;
@@ -129,32 +131,29 @@ body {
     line-height: 1.5;
     color: #fff;
 }
+
 .box3 h2 {
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
+
 .box3 p {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--light-gray);
 }
 
-
 .attribution {
-    margin-top: 15rem;
     font-size: 11px; 
     text-align: center;
     color: #030303; 
 }
+
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 } 
 
-@media (min-width: 768px) {
-    .container {
-        /* flex-direction: row; */
-        margin: 0 auto;
-    }
+@media screen and (min-width: 800px) {
     .grid-container {
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto auto;
@@ -165,31 +164,20 @@ body {
     }
     .box1 {
         grid-area: box1; 
-        /* flex-basis: 1; */
-        width: 100%;
-        padding: 3rem 10rem 3rem 4rem;
+        padding: 2.5rem 10rem 3rem 4rem;
     }
     .box2 {
         grid-area: box2;
-        width: 100%;
-
-        padding: 2.5rem 2.5rem 2.5rem 4rem;
+        padding: 2.5rem 2.5rem 0rem 4rem;
         border-radius: 0 0 0 1rem;
-    }
-    .box2 button {
-        width: 100%;
     }
     .box3 {
         grid-area: box3;
-        width: 100%;
-
-        padding: 2.5rem 2.5rem 2.5rem 4rem;
+        padding: 2.5rem 2.5rem 0rem 4rem;
         border-radius: 0 0 1rem 0;
     }
     .box3 h2 {
         margin-top: 0;
     }
-    .attribution {
-        margin: 0 auto;
-    }
+    
 }
